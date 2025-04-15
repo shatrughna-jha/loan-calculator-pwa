@@ -1,1 +1,1 @@
-// Service worker placeholder
+// Service worker logic coming soon
