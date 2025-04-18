@@ -1,10 +1,1 @@
-
-{
-  "name": "Loan Calculator PWA",
-  "short_name": "LoanCalc",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f172a",
-  "icons": []
-}
+{"name": "Loan Calculator PWA", "short_name": "LoanCalc", "start_url": "./index.html", "display": "standalone", "background_color": "#ffffff", "theme_color": "#0f172a", "icons": []}

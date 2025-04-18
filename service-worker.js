@@ -1,1 +1,1 @@
-// Service worker logic coming soon
+// Placeholder service worker for offline support
