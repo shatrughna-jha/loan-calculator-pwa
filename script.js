@@ -109,8 +109,12 @@ function addPrepaymentRow() {
   div.querySelectorAll('input').forEach(input => input.addEventListener('input', calculateEMIandSchedule));
 }
 
-document.querySelectorAll('#loan-form input, #loan-form select').forEach(input => {
-  input.addEventListener('input', calculateEMIandSchedule);
+// Ensure DOM is fully loaded before attaching event listeners
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('#loan-form input, #loan-form select').forEach(input => {
+    input.addEventListener('input', calculateEMIandSchedule);
+  });
+
+  document.getElementById('addPrepayment').addEventListener('click', addPrepaymentRow);
+  calculateEMIandSchedule();
 });
-document.getElementById('addPrepayment').addEventListener('click', addPrepaymentRow);
-calculateEMIandSchedule();
